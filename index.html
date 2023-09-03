@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH-Tube</title>
+    <!-- tailwind && daisy ui  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/fd638f076e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- font awsom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      *{
+          font-family: 'Work Sans', sans-serif;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="flex flex-col md:flex-row justify-between items-center py-5 px-5 border-b-2  gap-2 ">
+             <span><img src="./img/Logo.png" alt=""></span>
+             <button class=" btn w-full md:w-fit" onclick="allData('sort',true)">Sort by view</button>
+             <button onclick="window.location.href='./Blog.html'" class="btn btn-error w-full md:w-fit">Blog</button>
+        </nav>
+        <nav class=" flex flex-wrap justify-center gap-4 py-8 " >
+            <button onclick="allData('',false,1000);" class="btn" >All</button>
+            <button onclick="musicTab()" id="Music-btn" class="btn" >Music</button>
+            <button onclick="comedyTab()" class="btn" >Comedy</button>
+            <button class="btn " onclick="Deawing()" >Deawing</button>
+        </nav>
+    </header>
+    <main>
+       <section id="main-container" class="container w-fit mx-auto gap-0 lg:gap-24 grid grid-cols-1 md:grid-cols-2 md:gap-0 lg:grid-cols-4 lg:grid-flow-row">
+      
+          
+       </section>
+      
+    </main>
+    <!-- js part  -->
+    <script src="./main.js"></script>
+</body>
+</html> 
+
+
+  
+    

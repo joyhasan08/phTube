@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogPost</title>
+    <!-- tailwind && daisy ui  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/fd638f076e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- font awsom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      *{
+          font-family: 'Work Sans', sans-serif;
+      }
+    </style>
+</head>
+<body class="w-fit mx-auto">
+    <header>
+        <nav class="flex flex-col md:flex-row justify-between items-center py-5 px-5 border-b-2  gap-2 ">
+             <span><img src="./img/Logo.png" alt=""></span>
+             <button class=" btn w-full md:w-fit" onclick="allData('sort',true)">Sort by view</button>
+             <button onclick="window.location.href='./index.html'" class="btn btn-error w-full md:w-fit">Home</button>
+        </nav>
+    </header>
+    <!-- blog card  -->
+    <section class="">
+        <div class="lg:card w-96 p-4 lg:p-0 mx-auto lg:w-1/2 bg-base-100 ">
+            <figure class="lg:px-10 lg:py-10 py-5">
+              <img src="./img/blog.jpg" class="rounded-xl" />
+            </figure>
+            <div class="lg:card-body items-center space-y-10">
+                <h1 class="text-lg lg:text-4xl text-center"><strong>Exploring the Scope of var, let, and const in JavaScript</strong></h1>
+                <div class="lg:text-xl space-y-10 "> <!-- border-b-2 p-10 -->
+                    <p class="" ><strong>Introduction</strong>
+    
+                        JavaScript is a versatile and widely-used programming language known for its flexibility and ease of use. When it comes to declaring variables, JavaScript offers three different options: var, let, and const. These keywords have specific scopes and behavior, which can impact the way your code behaves. In this blog post, we will delve into the scope of var, let, and const to help you understand when and how to use each of them in your JavaScript projects.
+                    </p>
+                    <p> <strong>The Scope of var</strong>
+    
+                        var was the primary way to declare variables in JavaScript before the introduction of let and const. Variables declared with var are function-scoped or globally scoped, depending on where they are declared. This means that a variable declared with var inside a function is only accessible within that function, while a variable declared with var outside any function is globally accessible.</p>
+                        <p>
+                          
+                            <strong>The Scope of let</strong>
+                            let was introduced in <em>ECMAScript 6</em> (ES6) to address some of the issues associated with var. Variables declared with let have <em class="text-sky-500">block-level scope</em>, which means they are only accessible within the block in which they are defined. This makes let particularly useful for creating variables that are limited to a specific block of code.
+                        </p>
+                        <p>
+                            <strong>The Scope of const</strong>
+                            const is also introduced in ES6 and has block-level scope, similar to let. However, const variables come with an additional constraint: they cannot be reassigned after declaration. This makes const suitable for declaring constants or values that should remain unchanged throughout the block.
+                        </p>
+                </div>
+                  
+            </div>
+            </div>
+          </div>
+    </section>
+    <!-- blog card 2 -->
+    <section class="py-32">
+        <div class="lg:card w-96 p-4 lg:p-0 mx-auto lg:w-1/2 bg-base-100 ">
+            <figure class="lg:px-10 lg:py-10 py-5">
+              <img src="./img/luca-bravo-XJXWbfSo2f0-unsplash.jpg" class="rounded-xl" />
+            </figure>
+            <div class="lg:card-body items-center space-y-10">
+                <h1 class="text-lg lg:text-4xl text-center"><strong>Understanding the Use Cases of null and undefined in JavaScript</strong></h1>
+                <div class="lg:text-xl space-y-10">
+                    <p class="" ><strong>Introduction</strong>
+    
+                        In the world of JavaScript, two values frequently make an appearance: null and undefined. These seemingly similar terms, however, serve distinct purposes in the language. In this blog post, we'll explore the use cases of null and undefined to help you understand when and why to employ them in your JavaScript code.
+                    </p>
+                    <p> <span>
+                        <div class="mockup-code ">
+                            <pre data-prefix="$"><code>javascript</code></pre> 
+                            <pre data-prefix=">" class="text-warning"><code>let uninitializedVariable;</code></pre> 
+                            <pre data-prefix=">" class="text-success"><code>console.log(uninitializedVariable)<br>// Outputs: undefined</code></pre>
+                          </div>
+                    </span></p>
+                    <p>
+                            
+                          
+                            <strong>Conclusion</strong>
+                            let was introduced in <em>In summary, null and undefined serve distinct purposes in JavaScript:</em> Understanding when and how to use these values can help you write cleaner and more robust JavaScript code. Whether you need to indicate a deliberate absence or check for uninitialized variables, <strong>null</strong> and <strong>undefined</strong> are valuable tools in your JavaScript toolkit.
+                            
+                    </p> 
+                </div>
+            </section>
+    <!-- blog card 3 -->
+    <section class="">
+        <div class="lg:card w-96 p-4 lg:p-0 mx-auto lg:w-1/2 bg-base-100 ">
+            <figure class="lg:px-10 lg:py-10 py-5">
+              <img src="./img/API-1.png" class="rounded-xl" />
+            </figure>
+            <div class="lg:card-body items-center space-y-10">
+                <h1 class="text-lg lg:text-4xl text-center"><strong>Demystifying REST APIs - A Brief Overview</strong></h1>
+                <div class="lg:text-xl space-y-10  pb-10 mb-7 ">
+                    <p class="" ><strong>Introduction</strong>
+    
+                        A REST API <em>(Application Programming Interface)</em> is a set of rules and conventions for building and interacting with web services. These services allow different software applications to communicate with each other over the internet. REST APIs are based on a few core principles:
+                    </p>
+
+                    <p class="">
+                            
+                          
+                            <strong>What is a REST API?</strong>
+                            let was introduced in rest Api . It enables different software systems to communicate over the internet using standard HTTP methods, making it a fundamental technology for web applications. REST APIs are based on the principles of resources, HTTP methods, statelessness, and a uniform interface, allowing for scalable and interoperable communication between systems. <em>HTTP</em>  <strong> REST APIs</strong> and <strong>HTTP Methods</strong> REST APIs are based on several key principles.
+                            
+                    </p>
+                       
+                      
+                </div>
+        </section>
+  
+    
+</body>
+</html>
+<!--        <div class="lg:card-body items-center space-y-10">
+                <h1 class="text-lg lg:text-4xl text-center"><strong>Demystifying REST APIs - A Brief Overview</strong></h1>
+                <div class="lg:text-xl space-y-10">
+                    <p class="" ><strong>Introduction</strong>
+    
+                        A REST API <em>(Application Programming Interface)</em> is a set of rules and conventions for building and interacting with web services. These services allow different software applications to communicate with each other over the internet. REST APIs are based on a few core principles:
+                    </p>
+
+                    <p>
+                            
+                          
+                            <strong>What is a REST API?</strong>
+                            let was introduced in rest Api . It enables different software systems to communicate over the internet using standard HTTP methods, making it a fundamental technology for web applications. REST APIs are based on the principles of resources, HTTP methods, statelessness, and a uniform interface, allowing for scalable and interoperable communication between systems. <em>HTTP</em>  <strong> REST APIs</strong> and <strong>HTTP Methods</strong> REST APIs are based on several key principles.
+                            
+                    </p>
+                       
+                      
+                </div>
+                  
+            </div> -->
